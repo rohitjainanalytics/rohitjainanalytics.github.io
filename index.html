@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio | Rohit Jain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-card:hover { transform: translateY(-5px); }
+        .filter-btn.active { background-color: #2563eb; color: white; border-color: #2563eb; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter text-blue-600">DATA<span class="text-slate-800">ANALYST.</span></h1>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="text-slate-600 hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="text-slate-600 hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="text-slate-600 hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm hover:bg-blue-700 transition shadow-lg shadow-blue-200">Get In Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-3/5">
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="inline-flex items-center px-3 py-1 bg-emerald-100 text-emerald-700 text-[10px] font-bold rounded-full uppercase tracking-widest border border-emerald-200">
+                    <i class="fas fa-chart-line mr-1.5"></i> Data & Business Analysis
+                </span>
+                <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded-full uppercase tracking-widest border border-blue-200">
+                    <i class="fas fa-check-circle mr-1.5"></i> McKinsey Forward
+                </span>
+                <span class="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-700 text-[10px] font-bold rounded-full uppercase tracking-widest border border-purple-200">
+                    <i class="fas fa-graduation-cap mr-1.5"></i> GATE 2024 Qualified
+                </span>
+            </div>
+
+            <h2 class="text-5xl md:text-6xl font-black mb-6 tracking-tight">Turning data into <span class="text-blue-600">decisions.</span></h2>
+            <p class="text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl">
+                I'm <span class="font-bold text-slate-800">Rohit Jain</span>, an aspiring Data Analyst. I bridge the gap between complex raw data and strategic business insights using <span class="underline decoration-blue-400 decoration-2">SQL</span>, <span class="underline decoration-yellow-400 decoration-2">Python</span>, and <span class="underline decoration-orange-400 decoration-2">Tableau/PowerBI</span>.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition flex items-center gap-2">
+                    <i class="fas fa-chart-line"></i> View Projects
+                </a>
+                <a href="#" class="border-2 border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">
+                    Download CV
+                </a>
+            </div>
+        </div>
+        <div class="md:w-2/5 flex justify-center">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 bg-blue-600 rounded-3xl rotate-3 overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-slate-200 flex items-center justify-center -rotate-3">
+                    <i class="fas fa-user text-6xl text-slate-400"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Technical Toolbox -->
+    <section id="skills" class="bg-white py-24 border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold mb-4">The Technical Stack</h3>
+                <p class="text-slate-500">The tools I use to extract, clean, and visualize data.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="p-8 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-white transition group text-center">
+                    <i class="fas fa-database text-4xl text-blue-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold">SQL</h4>
+                    <p class="text-xs text-slate-400 mt-2 font-medium uppercase">MySQL / PostgreSQL</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-white transition group text-center">
+                    <i class="fab fa-python text-4xl text-yellow-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold">Python</h4>
+                    <p class="text-xs text-slate-400 mt-2 font-medium uppercase">Pandas / NumPy</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-white transition group text-center">
+                    <i class="fas fa-bolt text-4xl text-yellow-400 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold">Power BI</h4>
+                    <p class="text-xs text-slate-400 mt-2 font-medium uppercase">DAX / Modeling</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-white transition group text-center">
+                    <i class="fas fa-chart-pie text-4xl text-orange-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold">Tableau</h4>
+                    <p class="text-xs text-slate-400 mt-2 font-medium uppercase">Visualization</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-white transition group text-center">
+                    <i class="fas fa-file-excel text-4xl text-green-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h4 class="font-bold">Excel</h4>
+                    <p class="text-xs text-slate-400 mt-2 font-medium uppercase">VLOOKUP / Pivots</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+                <h3 class="text-3xl font-bold mb-4">Portfolio Projects</h3>
+                <p class="text-slate-500">Filtering the world through data-driven case studies.</p>
+            </div>
+            <div id="filter-container" class="flex flex-wrap gap-2">
+                <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 rounded-lg border text-sm font-bold transition">All</button>
+                <button onclick="filterProjects('sql')" class="filter-btn px-4 py-2 rounded-lg border text-sm font-bold transition">SQL</button>
+                <button onclick="filterProjects('python')" class="filter-btn px-4 py-2 rounded-lg border text-sm font-bold transition">Python</button>
+                <button onclick="filterProjects('bi')" class="filter-btn px-4 py-2 rounded-lg border text-sm font-bold transition">BI Dashboards</button>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+            <div class="project-card bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col" data-category="sql python">
+                <div class="h-48 bg-slate-200 relative group">
+                    <i class="fas fa-code text-4xl text-slate-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter bg-blue-100 text-blue-600 px-2 py-1 rounded">SQL</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Python</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Churn Prediction Analysis</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Identifying key features leading to customer churn in a telecom dataset using SQL window functions and Python.</p>
+                </div>
+            </div>
+            <div class="project-card bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col" data-category="bi">
+                <div class="h-48 bg-slate-200 relative group">
+                    <i class="fas fa-chart-bar text-4xl text-slate-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter bg-purple-100 text-purple-600 px-2 py-1 rounded">Power BI</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Retail Performance Dashboard</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Interactive Power BI dashboard summarizing sales, profit margins, and inventory turnover across 12 regions.</p>
+                </div>
+            </div>
+            <div class="project-card bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-200 flex flex-col" data-category="sql">
+                <div class="h-48 bg-slate-200 relative group">
+                    <i class="fas fa-table text-4xl text-slate-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+                </div>
+                <div class="p-6 flex-grow">
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter bg-green-100 text-green-700 px-2 py-1 rounded">Excel</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2">Real Estate Price Insights</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Automated market analysis tool using Power Query to pull SQL data into dynamic Excel reporting templates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual About Me Section (Screenshot Style) -->
+    <section id="about-visual" class="bg-blue-600 w-full overflow-hidden">
+        <div class="flex flex-col md:flex-row min-h-[500px]">
+            <!-- Image Side -->
+            <div class="md:w-1/2 relative bg-slate-300">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop" 
+                     alt="Rohit Jain" 
+                     class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-blue-900/10"></div>
+            </div>
+            
+            <!-- Text Side -->
+            <div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center text-white">
+                <h2 class="text-5xl font-light mb-10">About me</h2>
+                <div class="space-y-6 text-lg leading-relaxed font-light opacity-90 max-w-xl">
+                    <p>
+                        I am <span class="font-bold">Rohit Jain</span>, a data-driven Operations Engineer and GATE-qualified professional passionate about bridging the gap between raw data and impactful business decisions. 
+                    </p>
+                    <p>
+                        With a background in petroleum pipeline operations at HPCL, I've seen firsthand how analytics can transform processes—achieving up to 45x improvements in operational efficiency through automation and real-time monitoring. 
+                    </p>
+                    <p>
+                        I can support your organization in navigating complex datasets, from structured SQL queries and Python-based automation to the creation of interactive Tableau and Power BI dashboards that turn insights into evidence-driven strategy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-white pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 mb-16">
+                <div>
+                    <h3 class="text-4xl font-black mb-6">Let's talk about <br><span class="text-blue-400">your data.</span></h3>
+                    <p class="text-slate-400 mb-8 max-w-sm">Whether it's a junior role or a freelance data cleaning gig, I'm ready to dive into your spreadsheets.</p>
+                    <div class="space-y-4 text-lg">
+                        <a href="mailto:rohitjain.corp@gmail.com" class="flex items-center gap-4 hover:text-blue-400 transition">
+                            <i class="fas fa-envelope text-blue-400"></i> rohitjain.corp@gmail.com
+                        </a>
+                        <div class="flex gap-6 pt-4">
+                            <a href="https://linkedin.com/in/rohitjaincorporate" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition text-xl"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition text-xl"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <form onsubmit="event.preventDefault();" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Name</label>
+                                <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Email</label>
+                                <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-500 mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition"></textarea>
+                        </div>
+                        <button class="w-full bg-blue-600 py-4 rounded-xl font-bold hover:bg-blue-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-slate-800 text-center text-sm text-slate-500">
+                <p>© 2026 Rohit Jain | B.E. Mechanical Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.innerText.toLowerCase().includes(category)) btn.classList.add('active');
+                if(category === 'all' && btn.innerText === 'All') btn.classList.add('active');
+            });
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category.includes(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
